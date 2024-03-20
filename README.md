@@ -89,6 +89,8 @@ yarn dev
 pnpm dev
 ```
 
+Open your browser and navigate to http://localhost:5173 to see the app live.
+
 ## Contributing
 
 We welcome contributions! If you'd like to contribute to GEMINI-CE, please follow these guidelines:
@@ -98,10 +100,10 @@ We welcome contributions! If you'd like to contribute to GEMINI-CE, please follo
 - Make your changes
 - Submit a pull request
 
-## Starter GitHub Repo for React
-
-The starter GitHub repository used for this project is [React Starter](https://github.com/nyintosh/react-starter).
-
 ## Live Preview
 
 You can preview the live version of the project at [https://gemini-ce.vercel.app](https://gemini-ce.vercel.app).
+
+## Starter GitHub Repo for React
+
+The starter GitHub repository used for this project [React Starter](https://github.com/nyintosh/react-starter).
