@@ -11,6 +11,7 @@ GEMINI-CE is a clone of Google Gemini, built using React, Tailwind CSS, TypeScri
 - [Environment Variables](#environment-variables)
 - [Starting the Development Server](#starting-the-development-server)
 - [Contributing](#contributing)
+- [Live Preview](#live-preview)
 
 ## Tech Stack
 
@@ -100,3 +101,7 @@ We welcome contributions! If you'd like to contribute to GEMINI-CE, please follo
 ## Starter GitHub Repo for React
 
 The starter GitHub repository used for this project is [React Starter](https://github.com/nyintosh/react-starter).
+
+## Live Preview
+
+You can preview the live version of the project at [https://gemini-ce.vercel.app](https://gemini-ce.vercel.app).
