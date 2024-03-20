@@ -2,7 +2,7 @@
 
 ## Description
 
-GEMINI-CE is a clone of Google Gemini, built using React, Tailwind CSS, TypeScript, and Vite.
+GEMINI-CE is a simplified clone of Google Gemini, created with React, Tailwind CSS, TypeScript, and Vite. It aims to replicate the core features of Google Gemini in a straightforward manner.
 
 ## Table of Contents
 
