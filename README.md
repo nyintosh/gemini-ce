@@ -1,4 +1,4 @@
-# GEMINI-CE (Google Gemini Clone)
+# Gemini (CE)
 
 ## Description
 
@@ -93,7 +93,7 @@ Open your browser and navigate to http://localhost:5173 to see the app live.
 
 ## Contributing
 
-We welcome contributions! If you'd like to contribute to GEMINI-CE, please follow these guidelines:
+If you want to add additional features and improvements, we welcome contributions! Please follow these guidelines:
 
 - Fork the repository
 - Create a new branch
