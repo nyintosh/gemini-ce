@@ -1,5 +1,7 @@
 # Gemini (CE)
 
+<img width="1408" alt="SCR-20240703-kgws" src="https://github.com/nyintosh/gemini-ce/assets/56629705/3ab37579-eb23-448d-b0b6-314233917463">
+
 ## Description
 
 A simplified clone of Google Gemini, created with React, Tailwind CSS, TypeScript, and Vite. It aims to replicate the core features of Google Gemini in a straightforward manner.
