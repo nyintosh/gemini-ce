@@ -61,12 +61,7 @@ pnpm install
 
 ## Environment Variables
 
-This project requires the following environment variables:
-
-- `VITE_PUBLIC_GEMINI_MODEL_NAME`
-- `VITE_PUBLIC_GEMINI_API_KEY`
-
-Make sure to set these environment variables in your development environment.
+None. Each visitor brings their own Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey) and enters it in the top bar. The key is stored only in that browser and sent only to Google's API. The app uses the `gemini-3.5-flash-lite` model.
 
 ## Starting the Development Server
 

@@ -2,6 +2,10 @@ import { createContext, useState } from 'react';
 
 import { runChat } from '@/libs/gemini';
 
+// The reply is rendered as HTML, so escape it before adding our own tags.
+const escapeHtml = (text: string) =>
+	text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
 type ChatContextProps = {
 	sendPrompt: (prompt: string) => Promise<void>;
 	setPrevPrompts: React.Dispatch<React.SetStateAction<string[]>>;
@@ -59,7 +63,7 @@ export const ChatContextProvider = ({ children }: React.PropsWithChildren) => {
 		let formattedResponse = '';
 
 		if (error) {
-			setOutput(`<span class="text-red-500">${error}</span>`);
+			setOutput(`<span class="text-red-500">${escapeHtml(error)}</span>`);
 			setIsPending(false);
 			setIsGenerating(false);
 			setShowResult(true);
@@ -67,7 +71,7 @@ export const ChatContextProvider = ({ children }: React.PropsWithChildren) => {
 			return;
 		}
 
-		data!.split('**').forEach((word, idx) => {
+		escapeHtml(data!).split('**').forEach((word, idx) => {
 			if (idx === 0 || idx % 2 === 0) {
 				formattedResponse += word;
 			} else {
@@ -75,7 +79,7 @@ export const ChatContextProvider = ({ children }: React.PropsWithChildren) => {
 			}
 		});
 
-		formattedResponse = formattedResponse.split('*').join('<br />');
+		formattedResponse = formattedResponse.split('*').join('<br />').replace(/\n/g, '<br />');
 
 		setOutput('');
 		setIsPending(false);
